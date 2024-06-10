@@ -14,9 +14,13 @@ int main(){
     //     cout<<val<<" ";
     // }
      vector<int>a={1,3,3,4,5,3,3,3,3,3,45,6};
-     replace(a.begin()+1, a.begin()+8,3,10); //O(N) ekhane replace korar somoy ze index dibo sei index theke replace suru hobe and shesh index er ag porzonto replace hobe. ekhane a.begin()+8 deya hoyeche tai 7 index porzonto replace hobe
-     for(int vc:a){
-        cout<<vc<<" ";
-     }
+    //  replace(a.begin()+1, a.begin()+8,3,10); //O(N) ekhane replace korar somoy ze index dibo sei index theke replace suru hobe and shesh index er ag porzonto replace hobe. ekhane a.begin()+8 deya hoyeche tai 7 index porzonto replace hobe
+    //  for(int vc:a){
+    //     cout<<vc<<" ";
+    //  }
+    auto it=find(a.begin()+3, a.begin()+7,3);//find() func iterator return kore.
+    //ekhane a vector array te zodi given index porzoto kuthao 3 pawya zay tahole iterator it number asbe, nahole iterator it er value hobe a array er end() pointer.
+    if(it==a.end()) cout<<"Not found";
+    else cout<<"Found";
     return 0;
 }
