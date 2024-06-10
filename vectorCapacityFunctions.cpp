@@ -17,5 +17,7 @@ int main(){
     // for(int i=0; i<arr.size(); i++){
     //     cout<<arr[i]<<" "; // 1 2 0 0 0 7 7
     // }
+    arr.empty(); //empty() function arr er value gulu remove kore dey tobe size same thake. O(1);
+    cout<<arr[4]; //0
     return 0;
 }
